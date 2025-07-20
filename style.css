@@ -1,0 +1,135 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #befaef, #acb6e5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+/* Header */
+h1 {
+  font-size: 3rem;
+  padding: 12px 24px;
+   color: #ef5fe3;
+  
+  animation: fadeIn 1.5s ease-in, glow 3s infinite alternate;
+  transition: transform 0.3s ease;
+ 
+}
+
+
+/* Container */
+.container {
+  background: rgba(202, 37, 37, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Input + Button */
+.weather input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+  font-size: 1rem;
+}
+
+.weather .search {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.weather .search:hover {
+  background-color: #4e607a;
+}
+
+/* Weather Icon */
+.weather-icon {
+  width: 120px;
+  margin-top: 20px;
+  animation: float 3s ease-in-out infinite;
+  margin-left: 120px;
+  border-radius: 40%;
+}
+
+/* Weather Info */
+.weather-info {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.weather-info.show {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 300px; /* enough height to show full info */
+}
+
+#cityName {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#temperature,
+#description {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .weather input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .weather .search {
+    width: 100%;
+    margin-left: 0;
+  }
+}
