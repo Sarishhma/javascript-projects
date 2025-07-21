@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+      display: fex;
+    flex-direction: column;
+     align-items: center;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 500px;
+    height: 400px;
+    margin-top: 40px;
+     border-radius: 30px;
+    box-shadow: 1px 1px 5px black;
+
+}
+.answer-container button{
+   margin-top: 10px ;
+   background-color: rgb(217, 241, 244);
+   padding: 10px;
+   width: 350px; 
+   cursor: pointer; 
+   margin-left: 60px;
+}
+.answer-container button:hover{
+    background-color: rgb(169, 169, 231);
+    
+}
+.container h1{
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: float 5s infinite;
+    text-shadow: 2px 2px 5px rgb(219, 90, 15);
+    color: rgb(75, 79, 83);
+   
+
+}
+@keyframes float 
+{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px)}
+    100%{transform: translateY(0px);}
+    
+}
+.next{
+    margin: 10px;
+    padding: 5px;
+    width: 50px;
+    color: rgb(245, 245, 248);
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.next:hover{
+    background-color: rgb(54, 137, 53);
+    
+}
+
+@keyframes forward {
+    0%{transform: translateY(0);}
+    50%{transform:translateX(-10px)}
+    
+}
+.questions-container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 400px;
+    text-align: center;
+       color: black;
+}
