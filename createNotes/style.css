@@ -1,0 +1,81 @@
+
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 50px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.inputBox {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.inputBox:focus {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.delBtn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.delBtn:hover {
+  background-color: #cc0000;
+}
