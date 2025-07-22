@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h1 {
+  font-size: 3rem;
+  color: #270c3f; /* A rich violet */
+ 
+}
+
+ 
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: rgb(5, 5, 63);
+}
+.container{
+    border-radius: 10px;
+    padding: 40px;
+      text-align: center;
+      box-shadow: 5px 5px 10px rgb(248, 178, 248);
+      background-color: white;
+      height: 250px;
+    animation: float 3s ease-in-out infinite;
+  
+}
+@keyframes float {
+    0%{transform:translateY(0px) ;}
+    50%{transform: translateY(-15px);}
+    100%{transform: translateY(0px);}
+    
+}
+#password{
+    padding: 5px;
+    border-radius: 5px ;
+   
+   
+}
+.input-feild{
+ 
+   margin: 30px;
+    
+
+}
+
+.input-feild span{
+    cursor: pointer;
+}
+.btn{
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: rgb(189, 151, 240);
+
+}
+.btn:hover{
+    background-color: rgb(53, 13, 89);
+    transform:scale(1.1); 
+}
